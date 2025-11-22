@@ -1,2 +1,27 @@
+/* ============================= */
+/* HOTASOverlay Throttle Edit CSS */
+/* ============================= */
+
+/* Only overrides the labels of buttons without touching layout */
 .custom .button.a:after { content: "PRIMARY"; }
 .custom .button.b:after { content: "SECONDARY"; }
+.custom .button.x:after { content: "X-ACTION"; }
+.custom .button.y:after { content: "Y-ACTION"; }
+
+/* Optional: style the labels */
+.custom .button:after {
+  color: #00FF00;        /* bright green text */
+  font-weight: bold;     /* make it bold */
+  font-size: 10px;       /* default font size */
+  pointer-events: none;  /* labels don’t block clicks */
+}
+
+/* Optional: small position adjustments if needed */
+.custom .button.a { top: 10px; left: 20px; }
+.custom .button.b { top: 10px; left: 70px; }
+.custom .button.x { top: 50px; left: 20px; }
+.custom .button.y { top: 50px; left: 70px; }
+
+/* Ensure overlay container is visible */
+.custom { display: block !important; }
+.custom img { display: block !important; }
